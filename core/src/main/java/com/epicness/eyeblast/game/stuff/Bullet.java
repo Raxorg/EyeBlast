@@ -1,6 +1,7 @@
 package com.epicness.eyeblast.game.stuff;
 
 import static com.badlogic.gdx.graphics.Color.RED;
+import static com.epicness.eyeblast.game.GameConstants.BULLET_RADIUS;
 
 import com.badlogic.gdx.math.Vector2;
 import com.epicness.fundamentals.renderer.ShapeDrawerPlus;
@@ -12,7 +13,7 @@ public class Bullet {
     public final Vector2 speed;
 
     public Bullet() {
-        bullet = new Circle(5f, RED);
+        bullet = new Circle(BULLET_RADIUS, RED);
         speed = new Vector2();
     }
 

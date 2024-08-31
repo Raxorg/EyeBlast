@@ -1,6 +1,6 @@
 package com.epicness.eyeblast.game.logic;
 
-import static com.epicness.eyeblast.game.GameConstants.SHOOT_RATE;
+import static com.epicness.eyeblast.game.GameConstants.EYE_SHOOT_RATE;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.utils.SnapshotArray;
@@ -28,7 +28,7 @@ public class AttackHandler extends GameLogicHandler {
         for (int i = 0; i < eyes.size; i++) {
             eye = eyes.get(i);
             eye.cooldown += delta;
-            if (eye.cooldown >= SHOOT_RATE) {
+            if (eye.cooldown >= EYE_SHOOT_RATE) {
                 shoot(eye);
                 eye.cooldown = 0f;
             }

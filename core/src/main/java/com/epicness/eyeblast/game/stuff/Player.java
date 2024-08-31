@@ -2,6 +2,7 @@ package com.epicness.eyeblast.game.stuff;
 
 import static com.badlogic.gdx.graphics.Color.FOREST;
 import static com.badlogic.gdx.graphics.Color.RED;
+import static com.epicness.eyeblast.game.GameConstants.PLAYER_RADIUS;
 
 import com.badlogic.gdx.math.Vector2;
 import com.epicness.fundamentals.renderer.ShapeDrawerPlus;
@@ -13,7 +14,7 @@ public class Player {
     public final Vector2 speed;
 
     public Player() {
-        circle = new Circle(10f, FOREST);
+        circle = new Circle(PLAYER_RADIUS, FOREST);
         speed = new Vector2();
     }
 
