@@ -2,13 +2,14 @@ package com.epicness.fundamentals.lwjgl3;
 
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+import com.epicness.eyeblast.EyeBlastGame;
 import com.epicness.fundamentals.FundamentalsTest;
 
 public class Lwjgl3Launcher {
     public static void main(String[] args) {
         if (StartupHelper.startNewJvmIfRequired()) return; // This handles macOS support and helps on Windows.
 
-        new Lwjgl3Application(new FundamentalsTest(), getDefaultConfiguration());
+        new Lwjgl3Application(new EyeBlastGame(), getDefaultConfiguration());
     }
 
     private static Lwjgl3ApplicationConfiguration getDefaultConfiguration() {

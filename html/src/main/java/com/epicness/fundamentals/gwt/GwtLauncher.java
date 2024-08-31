@@ -3,6 +3,7 @@ package com.epicness.fundamentals.gwt;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
+import com.epicness.eyeblast.EyeBlastGame;
 import com.epicness.fundamentals.FundamentalsTest;
 
 /** Launches the GWT application. */
@@ -21,6 +22,6 @@ public class GwtLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener createApplicationListener () {
-            return new FundamentalsTest();
+            return new EyeBlastGame();
         }
 }
